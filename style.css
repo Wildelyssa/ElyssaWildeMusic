@@ -1,0 +1,81 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0;
+	height: 100vh;
+	font-family: 'Aref Ruqaa', serif;
+	background-image: url('./Images/bg.jpg');
+	background-size: cover;
+	background-position: top;
+}
+
+.Logo {
+	color: #E3FAF6 ;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.navContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-radius: 5px;
+	padding: 1rem 3rem 1rem 3rem;
+	list-style-type: none;
+	background: linear-gradient(to left, rgb(0, 23, 29, 0.8), rgb(0, 0, 0, 0.8));
+}
+
+.navA {
+	color: #E3FAF6;
+	font-size: 1.25rem;
+	text-decoration: none;
+}
+
+.navA:hover {
+	color: teal;
+}
+
+.mainContent {
+	padding: 5rem 10rem 5rem 10rem;
+	list-style-type:none;
+	text-align: center;
+	color: #E3FAF6;
+	font-size: 1.1rem;
+}
+
+.footerContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-radius: 5px;
+	margin-bottom: 0;
+	padding: 1rem;
+	list-style-type: none;
+	background: linear-gradient(to left, rgb(0, 23, 29, 0.8), rgb(0, 0, 0, 0.8));
+	color: #E3FAF6 ;
+	font-size: 1.25rem;
+}
+
+input {
+	margin-left: 0.5rem;
+	font-size: 1.25rem;
+	width: 20em;
+	-webkit-appearance: none;
+}
+
+.subscribeBtn {
+	margin-left:  0.5rem;
+	padding: 0.2rem;
+	-webkit-appearance: none;
+	background: #272E2D ;
+	color: #E3FAF6;
+	font-size: 1.25rem;
+	border-color: #272E2D ;
+	box-shadow: 2px 2px black;
+}
+
+.subscribeBtn:hover {
+	background: teal;
+	cursor: pointer;
+}
