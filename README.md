@@ -1,6 +1,6 @@
 # A musician/band website design
 
-## See live code: https://wildelyssa.github.io/ElyssaWildeMusic
+## See live code: https://wildelyssa.github.io/ElyssaWildeMusic/
 
 ## Tech Used
 * **HTML**
