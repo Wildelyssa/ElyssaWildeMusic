@@ -11,9 +11,16 @@ body {
 }
 
 .Logo {
+	margin-bottom: 0;
 	color: #E3FAF6 ;
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 3rem;
+}
+
+.LogoText {
+	margin: 0.5rem 0 2rem 0;
+	color: #E3FAF6;
+	text-align: center;
 }
 
 .navContent {
@@ -27,50 +34,70 @@ body {
 }
 
 .navA {
-	color: #E3FAF6;
-	font-size: 1.25rem;
 	text-decoration: none;
+	color: #E3FAF6;
+	text-transform: uppercase;
+
 }
 
 .navA:hover {
 	color: teal;
 }
 
+img {
+	object-fit: cover;
+	width: 45rem;
+}
+
 .mainContent {
-	padding: 5rem 10rem 5rem 10rem;
+	margin: 4rem 0 1rem 0;
 	list-style-type:none;
 	text-align: center;
 	color: #E3FAF6;
-	font-size: 1.1rem;
 }
 
-.footerContent {
+.header {
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+}
+
+.mainText {
+	background-color: white;
+	color: black;
+	padding: 0 10rem 1.5rem 10rem;
+}
+
+.mainText h1 {
+	text-align: center;
+}
+
+footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	border-radius: 5px;
 	margin-bottom: 0;
 	padding: 1rem;
-	list-style-type: none;
 	background: linear-gradient(to left, rgb(0, 23, 29, 0.8), rgb(0, 0, 0, 0.8));
 	color: #E3FAF6 ;
-	font-size: 1.25rem;
 }
 
 input {
+	font-family: 'Aref Ruqaa', serif;
+	padding: 0.4rem;
 	margin-left: 0.5rem;
-	font-size: 1.25rem;
 	width: 20em;
 	-webkit-appearance: none;
 }
 
 .subscribeBtn {
+	font-family: 'Aref Ruqaa', serif;
+	text-transform: uppercase;
 	margin-left:  0.5rem;
-	padding: 0.2rem;
+	padding: 0.4rem;
 	-webkit-appearance: none;
 	background: #272E2D ;
 	color: #E3FAF6;
-	font-size: 1.25rem;
 	border-color: #272E2D ;
 	box-shadow: 2px 2px black;
 }
