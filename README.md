@@ -7,7 +7,7 @@
 * **CSS**
 
 ## Purpose
-* Beginning template for music/band website which will showcase videos, galleries, and live shows including a logo
+Beginning template for music/band website which will showcase videos, galleries, and live shows including a logo
 
 
 ## Improvements and Edits
