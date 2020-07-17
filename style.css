@@ -1,24 +1,35 @@
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	margin: 0;
-	height: 100vh;
-	font-family: 'Aref Ruqaa', serif;
 	background-image: url('./Images/bg.jpg');
 	background-size: cover;
-	background-position: top;
+}
+
+.text {
+	font-family: 'Montserrat', sans-serif;
 }
 
 .Logo {
 	margin-bottom: 0;
+	margin-top: 1.5rem;
 	color: #E3FAF6 ;
 	text-align: center;
 	font-size: 3rem;
 }
 
+.moon {
+	padding: 0 0.3em;
+}
+
+.logoLetter {
+	font-size: 4rem;
+}
+
+.E {
+	letter-spacing: 0;
+}
+
 .LogoText {
-	margin: 0.5rem 0 2rem 0;
+	margin: 0.5rem 0 2.5rem 0;
 	color: #E3FAF6;
 	text-align: center;
 }
@@ -36,8 +47,6 @@ body {
 .navA {
 	text-decoration: none;
 	color: #E3FAF6;
-	text-transform: uppercase;
-
 }
 
 .navA:hover {
@@ -50,36 +59,37 @@ img {
 }
 
 .mainContent {
-	margin: 4rem 0 1rem 0;
-	list-style-type:none;
+	margin: 4rem 0 4rem 0;
 	text-align: center;
 	color: #E3FAF6;
 }
 
 .header {
-	letter-spacing: 0.05rem;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	font-family: 'Aref Ruqaa', serif;
 }
 
 .mainText {
 	background-color: white;
 	color: black;
-	padding: 0 10rem 1.5rem 10rem;
+	padding: 0.5rem 10rem 5rem 10rem;
+	font-family: 'Montserrat', sans-serif;
+	color: #001A1A;
 }
 
 .mainText h1 {
 	text-align: center;
 }
 
-footer {
+.subscribe {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	border-radius: 5px;
-	margin-bottom: 0;
-	padding: 1rem;
+	align-items: center;
 	background: linear-gradient(to left, rgb(0, 23, 29, 0.8), rgb(0, 0, 0, 0.8));
-	color: #E3FAF6 ;
+	color: #E3FAF6;
+	padding: 4rem 0;
 }
 
 input {
@@ -88,6 +98,8 @@ input {
 	margin-left: 0.5rem;
 	width: 20em;
 	-webkit-appearance: none;
+	border-radius: 0.2em;
+	border: none;
 }
 
 .subscribeBtn {
@@ -98,11 +110,154 @@ input {
 	-webkit-appearance: none;
 	background: #272E2D ;
 	color: #E3FAF6;
-	border-color: #272E2D ;
-	box-shadow: 2px 2px black;
+	border: none;
+	box-shadow: 1px 1px black;
+	border-radius: 0.2em;
 }
 
 .subscribeBtn:hover {
 	background: teal;
-	cursor: pointer;
 }
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	background: #000A0A;
+	color: #E3FAF6;
+}
+
+footer a:hover {
+	color: teal;
+}
+
+footer a {
+	color: #E3FAF6;
+	font-size: 2rem;
+	text-decoration: none;
+	padding: 0 1rem 4rem 1rem;
+	border-bottom: solid #E3FAF6 1px;
+}
+
+footer a:hover {
+	color: teal;
+}
+
+.iconBox {
+	display: flex;
+	flex-direction: row;
+	padding-top: 1.5rem;
+}
+
+footer p {
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+	img {
+		width: 30rem;
+	}
+
+	.mainText {
+		padding: 0.5rem 5rem 4rem 5rem;
+	}
+
+	.mobile {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.navA {
+		font-size: 0.6rem;
+	}
+
+	img {
+		width: 80%;
+	}	
+
+	.subscribe {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 1rem;
+		padding: 3rem 2rem;
+	}
+
+	label {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	input {
+		margin-left: 0;
+		width: 90%;
+	}
+
+	.subscribeBtn {
+		margin-left: 0;
+		padding: 0.3rem;
+	}
+
+	.mobile {
+		font-size: 0.8rem;
+	}
+
+	footer a {
+		font-size: 1.5rem;
+		padding: 0 0.5rem 2rem 0.5rem;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	.Logo {
+		font-size: 1.5rem;
+	}
+
+	.logoLetter {
+		font-size: 2.5rem;
+	}
+
+	.LogoText {
+		font-size: 0.7rem;
+	}
+
+	.navA {
+		font-size: 0.5rem;
+
+	}
+
+	.navContent {
+		padding: 1rem;
+	}
+
+	img { 
+		width:
+	}
+
+	.mainContent h4 {
+		font-size: 0.7rem;
+	}
+
+	.mainContent blockquote {
+		font-size: 0.7rem;
+	}
+
+	.mainText {
+		padding: 0.5rem 3rem 3rem 3rem;
+	}
+
+	.mainText h1 {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.iconBox {
+		padding: 0;
+	}
+}
+
+
